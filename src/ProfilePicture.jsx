@@ -1,14 +1,16 @@
+import $ from 'jquery';
+
 function ProfilePicture() {
     const imageUrl = "./src/assets/react.svg";
   
     const handleClick = (e) => {
-      e.target.style.display = "none";
-      document.getElementById('hiddenButton').hidden = false;
+      $(e.target).hide();
+      $('#hiddenButton').show();
     };
   
     const handleClick2 = (e) => {
-      e.target.style.display = "none";
-      document.getElementById('logo').style.display = "block";
+      $(e.target).hide();
+      $('#logo').show();
     };
   
     return (
